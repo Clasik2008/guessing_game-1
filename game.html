@@ -1,0 +1,42 @@
+<script type="text/javascript">
+// Welcome to What is the Price? A game that allows you to guess how much an article of clothing is based on how "cool" it is in the moment!
+
+
+// First tell the user what the game is and the rules
+var welcome = "Welcome to 'Whats The Price?' A game where you guess the cost of 3 items! Remember the price will change based on how cool it is in the moment! Are you ready to play?"
+confirm(welcome);
+
+var game_rules = "Here it goes! For each item you have to guess the retail price, if you win you may be able to keep it!* " + "                                              " + "* You don't get to keep it."
+alert(game_rules);
+
+
+//Tell the user the first item, collect the answer and compare to the price
+var price = Math.floor(Math.random()* 100) + 1;
+var pair_of_denim = prompt("Here is a hot pair of denim. How much do they cost? Between $1-$100.");
+if (pair_of_denim == price) {
+	alert("You're right! The price is $" + price)
+}else{
+	alert("No. You're wrong!!" + "The price is $" + price)
+}
+
+//Tell the user the second item
+var price2 = Math.floor(Math.random()* 100) + 1;
+var tee_shirt = prompt("Here is a cute tee shirt. How much does it cost? Between $1-$100.");
+
+if(tee_shirt == price2){
+	alert("You're right! The price is $" + price2);
+}else{
+	alert("No. You're wrong!!" + "The price is $" + price2);
+}
+
+//Tell the user the third and final item
+var price3 = Math.floor(Math.random()* 100) + 1;
+var pair_of_shoes = prompt("Here is a sassy pair of shoes. How much do they cost? Between $1-$100.");
+if(pair_of_shoes == price3){
+	alert("You're right! The price is $" + price3);
+}else{
+	alert("No. You're wrong!!" + "The price is $" + price3);
+}
+
+
+</script>
